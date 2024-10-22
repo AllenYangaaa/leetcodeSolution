@@ -1,6 +1,5 @@
 from typing import List
 
-
 class Solution:
     def removeAnagrams(self, words: List[str]) -> List[str]:
         former = ""
