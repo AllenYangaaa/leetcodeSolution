@@ -1,21 +1,22 @@
+"""Module providing class List"""
 from typing import List
 
 class Solution:
-    def removeAnagrams(self, words: List[str]) -> List[str]:
-        former = ""
-        retList = []
-        for word in words:
-            sWord = "".join(sorted(word))
-            if sWord != former:
-                retList.append(word)
-                former = sWord
-        return retList
+    """class docstring"""
+    def remove_anagrams(self, words: List[str]) -> List[str]:
 
         """
         tc:O(n*m*log(m))
-        sc：O(n*m)
+        sc:O(n*m)
         """
+        former = ""
+        ret_list = []
+        for word in words:
+            s_word = "".join(sorted(word))
+            if s_word != former:
+                ret_list.append(word)
+                former = s_word
+        return ret_list
 
-    
 a = Solution()
-print(a.removeAnagrams(['ab','ba','c','e','d']))
+print(a.remove_anagrams(['ab','ba','c','e','d']))

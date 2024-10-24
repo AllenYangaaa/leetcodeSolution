@@ -1,13 +1,15 @@
-import collections
+# import collections
 class Solution:
-    def greatestLetter(self, s: str) -> str:
-        charSet = set([c for c in s])      
+    """Solution for lc2309"""
+    def greatest_letter(self, s: str) -> str:
+        """blank"""
+        char_set = set([c for c in s])      
         ret = ''
         # print(charSet)
-        for c in charSet:
+        for c in char_set:
             up = c.upper()
             lo = c.lower()
-            if lo in charSet and up in charSet:
+            if lo in char_set and up in char_set:
                 ret = ret if ret and ret>up else up
         return ret
         # tc:O(N)
@@ -40,4 +42,4 @@ class Solution:
 
         # return ret
 a = Solution()
-print(a.greatestLetter('lEeTcOdE'))
+print(a.greatest_letter('lEeTcOdE'))
