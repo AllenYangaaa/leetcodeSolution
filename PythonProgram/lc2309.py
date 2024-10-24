@@ -1,9 +1,10 @@
+"""Module providing collctions"""
 # import collections
 class Solution:
     """Solution for lc2309"""
     def greatest_letter(self, s: str) -> str:
         """blank"""
-        char_set = set([c for c in s])      
+        char_set = set([c for c in s])
         ret = ''
         # print(charSet)
         for c in char_set:
@@ -23,7 +24,6 @@ class Solution:
         # for c in s:
         #     hashMap[c]+=1
         #     charSet.add(c)
-        
         # ret = ''
         # print(charSet)
         # for c in charSet:
