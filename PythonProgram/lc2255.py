@@ -9,6 +9,7 @@ class Solution:
                 ans += 1
         return ans
     def is_prefix(self, a, b):
+        """function judging if a is prefix of b"""
         if len(b) < len(a):
             return False
         for i in range(len(a)):
@@ -20,6 +21,6 @@ class Solution:
     sc:O(1)
     '''
 
-a = Solution()
-print (a.countPrefixes(["a","b","c","ab","bc","abc"], "abc"))
+aa = Solution()
+print (aa.countPrefixes(["a","b","c","ab","bc","abc"], "abc"))
           
